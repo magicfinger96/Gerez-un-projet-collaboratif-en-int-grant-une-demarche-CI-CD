@@ -17,8 +17,6 @@
 		<java.version>11</java.version>
         <sonar.organization>magicfinger96</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.projectKey>bobapp-back</sonar.projectKey>
-        <sonar.projectName>BobApp Backend</sonar.projectName>
 	</properties>
 	<dependencies>
 		<dependency>
