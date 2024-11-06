@@ -7,7 +7,7 @@ name: Front Build and Test
       branches:
         - main
 jobs:
-  build:
+  front_build_test:
     defaults:
       run:
         working-directory: front

@@ -7,7 +7,7 @@ on:
     types: [opened, synchronize, reopened]
 
 jobs:
-  docker:
+  back_docker:
     defaults:
       run:
         working-directory: back
