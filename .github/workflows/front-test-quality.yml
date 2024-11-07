@@ -1,4 +1,4 @@
-name: Front test and quality check
+name: Front Test and Quality Check
 on:
   push:
     branches:
@@ -9,7 +9,7 @@ on:
       - main
 jobs:
   front_build_test:
-    name: Front Build and Test
+    name: Front Build, Test and Quality Check
     defaults:
       run:
         working-directory: front
