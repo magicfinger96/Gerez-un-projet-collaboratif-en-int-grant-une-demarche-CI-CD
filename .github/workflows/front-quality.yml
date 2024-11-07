@@ -1,9 +1,8 @@
 name: Front Quality Check
-'on':
+on:
   workflow_run:
-    workflows: ["Front Build and Test"]
-    types: 
-      - completed
+    workflows: ['Front Build and Test']
+    types: [completed]
 jobs:
   front_quality:
     name: SonarCloud
