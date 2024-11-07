@@ -2,7 +2,7 @@ name: Front Build and Test
 'on':
   push:
     branches:
-      - main
+      - main #test!
     pull_request:
       types: [opened, synchronize, reopened]
 jobs:
