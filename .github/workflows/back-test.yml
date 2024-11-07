@@ -1,5 +1,5 @@
 name: Back Build and Test
-'on':
+on:
   push:
     branches:
       - main

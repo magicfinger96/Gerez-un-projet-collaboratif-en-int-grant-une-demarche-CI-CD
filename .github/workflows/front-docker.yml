@@ -1,11 +1,10 @@
 name: Front End Docker Build and Push
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    types: [opened, synchronize, reopened]
-
+  workflow_run:
+    workflows: ["Front Quality Check"]
+    branches: [main]
+    types: 
+      - completed
 jobs:
   front_docker:
     runs-on: ubuntu-latest
