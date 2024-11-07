@@ -1,10 +1,10 @@
 name: Front Quality Check
 on:
-  workflow_run:
-    workflows: ["Front Build and Test"]
-    branches: [main]
-    types: 
-      - completed
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, synchronize, reopened]
 jobs:
   front_quality:
     name: SonarCloud
