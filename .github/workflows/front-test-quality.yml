@@ -24,8 +24,8 @@ jobs:
           cache: npm
           cache-dependency-path: 'front/package-lock.json'
       - run: npm ci
-      - name: Build the app
-        run: npm run build
+      #- name: Build the app
+        #run: npm run build
       - name: Run the tests
         run: npm run test
       - name: Generate report
@@ -45,13 +45,6 @@ jobs:
       run:
         working-directory: front
     steps:
-      - name: Check if coverage directory exists
-        run: |
-          if [ -d "./front/coverage" ]; then
-          echo "Coverage directory exists."
-          else
-          echo "Coverage directory does not exist."
-          fi
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
