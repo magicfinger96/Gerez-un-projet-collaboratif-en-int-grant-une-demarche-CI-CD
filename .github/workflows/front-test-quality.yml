@@ -29,7 +29,7 @@ jobs:
       - name: Build the app
         run: npm run build
       - name: Run the tests
-        run: npm run test --browsers=ChromeHeadless --watch=false --code-coverage
+        run: npm run test:ci
       - name: Generate report
         uses: actions/upload-artifact@v4
         if: success() || failure()
