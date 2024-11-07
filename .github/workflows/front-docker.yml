@@ -2,7 +2,6 @@ name: Front End Docker Build and Push
 on:
   workflow_run:
     workflows: ["Front Quality Check"]
-    branches: [main]
     types: 
       - completed
 jobs:

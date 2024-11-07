@@ -2,7 +2,6 @@ name: Back End Docker Build and Push
 on:
   workflow_run:
     workflows: ["Back Quality Check"]
-    branches: [main]
     types: 
       - completed
 jobs:
