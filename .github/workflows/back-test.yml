@@ -5,6 +5,8 @@ name: Back Build and Test
       - main
   pull_request:
     types: [opened, synchronize, reopened]
+    branches:
+      - main
 jobs:
   back_build_test:
     runs-on: windows-latest
