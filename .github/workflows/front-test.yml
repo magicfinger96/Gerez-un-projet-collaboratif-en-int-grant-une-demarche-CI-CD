@@ -3,9 +3,8 @@ name: Front Build and Test
   push:
     branches:
       - main
-    pull_request:
-      branches:
-        - main
+  pull_request:
+    types: [opened, synchronize, reopened]
 jobs:
   front_build_test:
     defaults:

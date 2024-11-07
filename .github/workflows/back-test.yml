@@ -3,9 +3,8 @@ name: Back Build and Test
   push:
     branches:
       - main
-    pull_request:
-      branches:
-        - main
+  pull_request:
+    types: [opened, synchronize, reopened]
 jobs:
   back_build_test:
     runs-on: windows-latest
