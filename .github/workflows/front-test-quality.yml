@@ -45,10 +45,13 @@ jobs:
       run:
         working-directory: front
     steps:
-      - name: List coverage files ANDREA 0
-        run: ls -R .
-      - name: List coverage files ANDREA
-        run: ls -R coverage
+      - name: Check if coverage directory exists
+        run: |
+          if [ -d "./front/coverage" ]; then
+          echo "Coverage directory exists."
+          else
+          echo "Coverage directory does not exist."
+          fi
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
