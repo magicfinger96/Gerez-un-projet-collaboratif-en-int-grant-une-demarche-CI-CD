@@ -1,11 +1,10 @@
 name: Back End Docker Build and Push
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    types: [opened, synchronize, reopened]
-
+  workflow_run:
+    workflows: ["Back Quality Check"]
+    branches: [main]
+    types: 
+      - completed
 jobs:
   back_docker:
     defaults:
